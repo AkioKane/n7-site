@@ -150,7 +150,7 @@ header li:hover {
   border: 3px solid #27272a;
   border-radius: 16px;
   background-color: #18181b;
-  height: 80%;
+  height: 500px;
   max-width: 700px;
   width: 60%;
   min-width: 550px;
@@ -160,6 +160,10 @@ header li:hover {
 
 .container h1 {
   margin-top: 1em;
+}
+
+.container p {
+  font-size: 1.15rem;
 }
 
 .container img {
