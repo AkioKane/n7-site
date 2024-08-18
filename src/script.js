@@ -3,6 +3,7 @@ const headLi = document.querySelectorAll(".head-li");
 const gridContainer = document.querySelector(".grid-container")
 const linkItem = document.querySelector(".link-item")
 const opened = document.querySelector(".opened")
+const main = document.querySelector(".main")
 
 function clear() {
   return container.innerHTML = "";
@@ -105,9 +106,11 @@ headLi.forEach(element => {
   element.addEventListener("click", (event) => {
     if (event.target.id == "home") {
       clear();
+      main.style.backgroundImage = 'url("./assets/back.webp")';
       loadHome();
     } else if (event.target.id == "news") {
       clear()
+      main.style.backgroundImage = 'url("./assets/back1.jpeg")'
       loadShop("Illarionz", "Owner N7", illarionz, "./assets/illarionz.jpg");
     } else if (event.target.id == "info") {
       // function loadInfo

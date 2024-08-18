@@ -73,30 +73,19 @@ a {
   color: white;
   min-height: var(--main-size);
   transition: background-image 0.9s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  background-image: url('./assets/back.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  animation: load 1s;
 }
 
 .main * {
   animation: load 0.5s;
 }
 
-.main::before {
-  content: "";
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('./assets/back.webp');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  filter: blur(2px);
-  z-index: -1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.main.loaded::before {
+.loaded::before {
   opacity: 1;
 }
 
@@ -128,6 +117,7 @@ nav {
 header li {
   transition: all 0.15s ease-in-out;
   margin-bottom: 5px;
+  cursor: default;
 }
 
 header li:hover {
@@ -205,7 +195,7 @@ header li:hover {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(3, minmax(250px, 1fr));
   gap: 2em;
   margin-top: 2em;
   margin-left: 2em;
@@ -223,7 +213,7 @@ header li:hover {
   background-color: #262626;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% auto;
+  background-size: 130% auto;
   transition: all 0.3s ease-in-out;
 }
 
