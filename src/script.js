@@ -110,7 +110,7 @@ headLi.forEach(element => {
       loadHome();
     } else if (event.target.id == "news") {
       clear()
-      main.style.backgroundImage = 'url("./assets/back1.jpeg")'
+      main.style.backgroundImage = 'url("./assets/back1.jpg")'
       loadShop("Illarionz", "Owner N7", illarionz, "./assets/illarionz.jpg");
     } else if (event.target.id == "info") {
       // function loadInfo
