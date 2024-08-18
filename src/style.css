@@ -34,12 +34,18 @@ ul {
   font-family: "Nunito";
 }
 
+h3 {
+  font-family: "Kay";
+  font-size: 1.25rem;
+}
+
 p {
   font-family: "Kay";
 }
 
 body {
   background-color: rgb(87, 87, 87);
+  overflow: hidden;
   animation: load 0.6s;
 }
 
@@ -87,7 +93,7 @@ a {
   background-size: cover;
   filter: blur(2px);
   z-index: -1;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .main.loaded::before {
@@ -143,6 +149,10 @@ header li:hover {
   height: calc(var(--main-size) - var(--header-size));
 }
 
+#content.load-content {
+  overflow: hidden;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -185,6 +195,98 @@ header li:hover {
   height: 2em;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.discord-button:active {
+  scale: 1.1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: calc(100% - 4em);
+  height: calc(100% - 2em);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #262626;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+  scale: 1.05;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #262626;
+  border-radius: 0 0 8px 8px;
+  height: 20%;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer * {
+  margin-left: 0.5em;
+}
+
+.footer:hover {
+  background-color: #9e0707;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer p {
+  font-family: "Nunito";
+}
+
+.footer button {
+  display: flex;
+  height: 100%;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito";
+  transition: all 0.3s ease-in-outW;
+  border-radius: 0 0 8px 0;
+  border: none;
+  background-color: #262626;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.div-text {
+  display: none;
+  background-color: #18181b;
+  opacity: 0.975;
+  height: calc(100% - 20%);
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.div-text p {
+  margin: 1em ;
+  font-family: "Roboto";
 }
 
 @keyframes load {

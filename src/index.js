@@ -1,3 +1,7 @@
 import './style.css'
 import './load.js'
 import './assets/logo.png'
+import './assets/moder.png'
+import './assets/back.webp'
+import './assets/illarionz.jpg'
+import './script.js'
