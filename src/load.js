@@ -4,5 +4,5 @@ window.addEventListener('load', () => {
   background.style.opacity = "1"
   setTimeout(function() {
     document.body.classList.remove("load-scroll")
-  }, 500)
+  }, 1000)
 });
