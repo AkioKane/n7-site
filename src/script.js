@@ -202,7 +202,7 @@ headLi.forEach((element) => {
         "rokeyzzz",
         "Owner N7",
         rokeyzzz,
-        "./assets/rokeyzzz.png",
+        "./assets/rokeyzzz.gif",
         content
       );
       loadInfo(
