@@ -211,7 +211,7 @@ header li:hover {
   margin-left: 2em;
   margin-right: 2em;
   width: calc(100% - 4em);
-  min-height: calc(85vh - 11em);
+  min-height: calc(var(--main-size) - (var(--header-size) + 2em));
   margin-bottom: 0.5em;
   /* height: auto; */
 }
