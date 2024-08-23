@@ -135,9 +135,14 @@ function loadNews(name, nameDescription, description, date) {
 
 loadHome();
 
+document.body.classList.add("load-scroll");
+setTimeout(function () {
+  document.body.classList.remove("load-scroll");
+}, 1000);
+
 let illarionz = "Крутой тип с фасика.";
 let rokeyzzz = "Меня убил Дантес, я призрак Пушкина, преследую маленьких девочек по Иркутску, чтобы написать поэму о их маленькой жизни.";
-let kurtted = 'Меня бросила девушка со словами "Ты мне больше никто", в ответ я сказал "Маме своей так скажи" и проломил ей череп вертухой дрррррпмбум чикибубуббм...'
+let kurtted = 'Меня бросила девушка со словами "Ты мне больше никто", в ответ я сказал "Маме своей так скажи" и проломил ей череп вертухой дрррррпмбум чикибубуббм...';
 
 let infoDescription = [
   {
@@ -181,13 +186,31 @@ headLi.forEach((element) => {
       container.appendChild(content);
 
       document.body.classList.add("load-scroll");
-      setTimeout(function() {
+      setTimeout(function () {
         document.body.classList.remove("load-scroll");
       }, 1000);
-      
-      loadInfo("Illarionz", "Owner N7", illarionz, "./assets/illarionz.jpg", content);
-      loadInfo("rokeyzzz", "Owner N7", rokeyzzz, "./assets/rokeyzzz.png", content);
-      loadInfo("kurtted", "Developer N7", kurtted, "./assets/kurtted.gif", content)
+
+      loadInfo(
+        "Illarionz",
+        "Owner N7",
+        illarionz,
+        "./assets/illarionz.jpg",
+        content
+      );
+      loadInfo(
+        "rokeyzzz",
+        "Owner N7",
+        rokeyzzz,
+        "./assets/rokeyzzz.png",
+        content
+      );
+      loadInfo(
+        "kurtted",
+        "Developer N7",
+        kurtted,
+        "./assets/kurtted.gif",
+        content
+      );
     }
   });
 });
