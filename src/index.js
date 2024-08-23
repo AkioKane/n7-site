@@ -6,5 +6,6 @@ import './assets/back.webp';
 import './assets/back1.webp';
 import './assets/back2.jpg';
 import './assets/kurtted.gif';
+import './assets/realm.gif';
 import './assets/illarionz.jpg';
 import './assets/rokeyzzz.png';
