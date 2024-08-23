@@ -204,14 +204,16 @@ header li:hover {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(340px,1fr));
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(340px,1fr));
+  grid-template-rows: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2em;
   margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;
   width: calc(100% - 4em);
-  height: calc(100vh - 10em);
+  min-height: calc(85vh - 11em);
+  margin-bottom: 2em;
+  /* height: auto; */
 }
 
 .item {
@@ -226,6 +228,7 @@ header li:hover {
   background-blend-mode: inherits;
   background-size: cover;
   transition: all 0.3s ease-in-out;
+  min-height: 340px;
 }
 
 .item:hover {
