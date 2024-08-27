@@ -165,7 +165,8 @@ headLi.forEach((element) => {
     if (event.target.id == "home") {
       clear();
       container.style.alignItems = "center";
-      main.style.backgroundImage = 'url("./assets/back.webp")';
+      main.style.backgroundColor = '#09090b';
+      main.style.backgroundImage = 'none';
       loadHome();
     } else if (event.target.id == "news") {
       clear();

@@ -23,6 +23,10 @@
   --header-size: 7em;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +87,7 @@ a {
   min-height: var(--main-size);
   transition: background-image 0.9s ease-in-out;
   transition: opacity 1s ease-in-out;
-  background-image: url('./assets/back.webp');
+  background-color: #171717;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
