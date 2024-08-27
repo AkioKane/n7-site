@@ -165,7 +165,7 @@ headLi.forEach((element) => {
     if (event.target.id == "home") {
       clear();
       container.style.alignItems = "center";
-      main.style.backgroundColor = '#09090b';
+      main.style.backgroundColor = '#171717';
       main.style.backgroundImage = 'none';
       loadHome();
     } else if (event.target.id == "news") {
